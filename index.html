@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html>
+	<body>
+<canvas id='c' width='800' height='700' style="border:1px solid #000000;"></canvas>
+<p>Equation: <input id='equation'></input> <button onclick="equate()"> Graph </button><button onclick="zoomIn()">Zoom In</button><button onclick="zoomOut();">Zoom Out</button>
+<p><b>Note: special properties are defined with the js Math function.(Ex. Math.sin(x), Math.PI(), etc.)</b></p>
+  </body>
+	
+	
+	
+	
+	
 <script>
   var c = document.getElementById('c');
 var ctx = c.getContext('2d');
@@ -89,11 +99,7 @@ ctx.moveTo(-c.width/2,0);
 initialize();
 grid(scope);
   </script>
-<body>
-<canvas id='c' width='800' height='700' style="border:1px solid #000000;"></canvas>
-<p>Equation: <input id='equation'></input> <button onclick="equate()"> Graph </button><button onclick="zoomIn()">Zoom In</button><button onclick="zoomOut();">Zoom Out</button>
-<p><b>Note: special properties are defined with the js Math function.(Ex. Math.sin(x), Math.PI(), etc.)</b></p>
-  </body>
+
   
   
 </html>
