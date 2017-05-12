@@ -1,17 +1,26 @@
-var c = document.getElementById('c');
-var ctx = c.getContext('2d');
-var scope = 20; //DONT GO OVER 5000, and make it an even number so its accurate
-var unit = 1/scope;
+window.onload = function () {
+	var c = document.getElementById('c');
+	var ctx = c.getContext('2d');
+	var scope = 20; //DONT GO OVER 5000, and make it an even number so its accurate
+	var unit = 1/scope;
+	alert('loaded');
+};
+
+
+
 function zoomIn(){
 if(scope>2){
 	scope -=2;
 }
 equate();
 }
+
+
 function zoomOut(){
 scope +=2;
 equate();
 }
+
 //initialize coordinate plane
 function initialize(){
 ctx.moveTo(0,c.height/2)
@@ -20,6 +29,7 @@ ctx.moveTo(c.width/2,0);
 ctx.lineTo(c.width/2,c.height)
 ctx.stroke();
 }
+
 //add scope lines
 function grid(scope){
 //x
