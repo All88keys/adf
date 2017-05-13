@@ -1,12 +1,10 @@
-//window.onload = function () {
-	var c = document.getElementById('c');
-	var ctx = c.getContext('2d');
-	var scope = 20; //DONT GO OVER 5000, and make it an even number so its accurate
-	var unit = 1/scope;
-	initialize();
-	grid(scope);
-	alert('loaded');
-//};
+var c = document.getElementById('c');
+var ctx = c.getContext('2d');
+var scope = 20; //DONT GO OVER 5000, and make it an even number so its accurate
+var unit = 1/scope;
+initialize();
+grid(scope);
+console.log('loaded');
 
 
 
