@@ -74,9 +74,9 @@ ctx.beginPath();
 ctx.moveTo(-c.width/2,0);
 	for(var x = -c.width/2; x <=c.width/2; x+=unit){
   	var y = -eval(eq);
-  	var xCoor = Math.max(Math.min(x*(c.width/scope), c.width/2), -c.width/2);
-  	var yCoor = Math.max(Math.min(y*(c.height/scope), c.height/2), -c.height/2);
-  	ctx.lineTo(xCoor, yCoor);                                   
+  	//var xCoor = Math.max(Math.min(x*(c.width/scope), c.width/2), -c.width/2);
+  	//var yCoor = Math.max(Math.min(y*(c.height/scope), c.height/2), -c.height/2);
+  	ctx.lineTo(Math.max(Math.min(x*(c.width/scope), c.width/2), -c.width/2), Math.max(Math.min(y*(c.height/scope), c.height/2), -c.height/2));                                   
   }
   ctx.stroke();
 }
