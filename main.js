@@ -2,9 +2,10 @@ var c = document.getElementById('c');
 var ctx = c.getContext('2d');
 var scope = 20; //DONT GO OVER 5000, and make it an even number so its accurate
 var unit = 1/scope;
-
 window.addEventListener('resize', resizeCanvas, false);
-        
+resizeCanvas();
+
+
 function resizeCanvas() {
 	c.width = window.innerWidth-30;
 	c.height = window.innerHeight-105;
