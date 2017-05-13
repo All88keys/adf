@@ -6,8 +6,8 @@ var unit = 1/scope;
 window.addEventListener('resize', resizeCanvas, false);
         
 function resizeCanvas() {
-	c.width = window.innerWidth;
-	c.height = window.innerHeight;
+	c.width = window.innerWidth-30;
+	c.height = window.innerHeight-105;
 	equate();
 }
 
